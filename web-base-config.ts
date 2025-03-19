@@ -1,6 +1,6 @@
 import isDomainLocalhost from "./src/lib/isDomainLocalhost";
 
-const WebBaseConfigCurrentEnv: CurrentEnv = 'local';
+const WebBaseConfigCurrentEnv: CurrentEnv = 'prod';
 const webKind: WebKind =  'fabumao';
 
 
@@ -62,8 +62,8 @@ const WebBaseConfig: WebBaseConfig = {
   // 区分 后端的
   webKind,
 
-  keywords: '发布猫',
-  description: '发布猫',
+  keywords: '发发猫',
+  description: '发发猫',
 
   webKindData: {
     fabumao: {

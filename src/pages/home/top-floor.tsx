@@ -26,7 +26,7 @@ const HomeTopFloor = () => {
 			<div className={ styles.bannerItemContent }>
 				<div className={ styles.pageWarp }>
 					<div className={ styles.title }>
-						<div>发布就用 <span className={ styles.high }>发布猫</span></div>
+						<div>发布就用 <span className={ styles.high }>发发猫</span></div>
 						<div className={ styles.subtitle }>短视频全自动发布平台</div>
 					</div>
 					<div className={ styles.features }>
