@@ -1,0 +1,59 @@
+.thumb {
+  display: flex;
+  flex-direction: row;
+  .showBox {
+    min-width: 200px;
+    min-height: 100px;
+    .thumbImageBox {
+      background-color: #f2f2f2;
+      box-shadow: 0 0 5px #DDD;
+      border-radius: 5px;
+    }
+    .thumbImage {
+      //display: block;
+      //height: 100%;
+      //max-width: 100%;
+      //box-shadow: 0 0 3px #ccc;
+    }
+  }
+  .emptyUpload {
+    text-align: center;
+    padding: 6% 0 0;
+    a {
+      display: block;
+      padding: 10% 0 0;
+      font-size: 50px;
+      line-height: 1.4em;
+    }
+    p {
+      color: #888;
+      font-size: 12px;
+    }
+  }
+  .imageBox {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    .del {
+      position: absolute;
+      top: -10px;
+      right: -45px;
+      padding: 10px;
+      line-height: 1em;
+      font-size: 20px;
+      color: #c00;
+    }
+  }
+  .uploadContent {
+    padding: 20% 6px 10px;
+    .alt {
+      padding: 12px 0 0;
+    }
+  }
+  .operate {
+    flex: 2;
+    margin: auto auto 0 20px;
+  }
+}

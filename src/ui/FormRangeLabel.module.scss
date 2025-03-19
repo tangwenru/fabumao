@@ -1,0 +1,26 @@
+.formItemLabel{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  .labTag{
+    font-size: 12px;
+    margin-left: 10px;
+    font-weight: 300;
+    background-color: #DDD;
+    padding: 0 5px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 3px;
+    vertical-align: middle;
+    color: #666;
+  }
+  .hr{
+    margin: 0 6px;
+    color: #999;
+  }
+  .extInfo{
+    display: flex;
+    flex: 2;
+    justify-content: end;
+  }
+}

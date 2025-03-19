@@ -1,0 +1,46 @@
+.pageContentBox{
+  .loading{
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 30px;
+  }
+
+  .pageTitle {
+    position: relative;
+    padding: 5px 15px 12px 0;
+    font-size: 22px;
+    font-weight: 400;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    line-height: 1.2em;
+    margin: 0 0 12px 0;
+    &.noTitles {
+      display: none;
+    }
+    &.noTitle {
+      border-bottom: none;
+    }
+    .subtitle {
+      font-size: 15px;
+      display: inline-block;
+      padding-left: 10px;
+      color: #888;
+    }
+    .extInfo {
+      position: absolute;
+      bottom: 6px;
+      right: 0;
+      font-size: 14px;
+      line-height: 38px;
+      :global{
+        .ant-form-item{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,69 @@
+.footer{
+  padding: 40px 0 80px;
+  color: #AAA;
+  font-size: 12px;
+  font-weight: 300;
+  background-color: #27282c;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  p{
+    margin: 0;
+    padding: 0 0 24px 0;
+  }
+  a{
+    color: rgba( 255, 255, 255, 0.7);
+    &:hover{
+      color: #FFF;
+      text-decoration: underline;
+    }
+  }
+  .items{
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 16px 0;
+    line-height: 1.5em;
+  }
+  .version{
+    //font-size: 10px;
+    opacity: 0.5;
+    font-size: 11px;
+  }
+  .copyright{
+    opacity: 0.6;
+    font-size: 12px;
+  }
+
+  //.footerInner{
+  //  padding: 20px 0;
+  //  margin: 0;
+  //  line-height: 1.5em;
+  //  color: #999;
+  //}
+  .hr{
+    filter: invert(100%);
+  }
+  .left{
+    flex: 2;
+  }
+  .right{
+    .qrCode{
+      padding: 5px;
+      background: #FFF;
+      border-radius: 5px;
+      .alt{
+        text-align: center;
+        font-size: 12px;
+        line-height: 1em;
+        padding: 5px 0 2px;
+        color: #888;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  // 折叠菜单,
+  .footer{
+
+  }
+}

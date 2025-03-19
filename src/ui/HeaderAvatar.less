@@ -1,0 +1,47 @@
+.nickname{
+  max-width: 100px;
+  text-overflow: ellipsis;
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  height: 28px;
+  line-height: 28px;
+  vertical-align: middle;
+}
+
+.avatar{
+  position: relative;
+  :global{
+    .ant-avatar{
+      width: 36px !important;
+      height: 36px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  main{
+    :global{
+      .ant-pro-global-header-header-actions-avatar{
+        padding-right: 0 !important;
+        padding-left: 8px !important;
+      }
+    }
+    .avatar{
+      margin: 0 !important;
+      padding: 0 !important;
+      :global{
+        .ant-avatar{
+          display: none;
+        }
+      }
+      .nickname{
+        max-width: 80px;
+      }
+    }
+
+  }
+
+}
+

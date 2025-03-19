@@ -1,0 +1,64 @@
+.userAvatar{
+  position: relative;
+  z-index: 10;
+
+  &.openLists{
+    .lists{
+      display: block;
+    }
+  }
+}
+
+
+.avatar-box{
+  position: relative;
+  padding: 6px 0 6px 8px;
+  border-radius: 5px;
+  border: 1px solid #DDD;
+  width: 80px;
+  cursor: pointer;
+
+  img{
+    width: 40px;
+    height: 40px;
+    background-color: #F2F2F2;
+  }
+
+  .down{
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 52px;
+    padding: 0 6px;
+  }
+
+}
+
+.lists{
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 62px;
+  box-shadow: 0 0 10px #CCC;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #FFF;
+  width: 620px;
+  .items{
+    //padding: 0 0 20px;
+  }
+
+  .item{
+    display: inline-block;
+
+    padding: 0 5px 5px 5px;
+    img{
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      //border: 1px solid #EEE;
+    }
+  }
+}
+
+

@@ -1,0 +1,17 @@
+.tableEmpty{
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding: 30px 10px 50px;
+  color: #666; margin: -2px 0 0;
+  background-color: #FFF;
+  .icon{
+    margin: 10px auto 10px;
+    color: #959595;
+    width: 50px;
+    font-size: 50px;
+  }
+  p{ margin: 0; line-height: 1.6em; color: #999; padding: 10px 0 ; font-size: 14px; }
+
+
+}

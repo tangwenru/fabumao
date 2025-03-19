@@ -1,0 +1,106 @@
+.contact{
+  padding: 96px 0;
+  background-color: #27282c;
+  color: #FFF;
+  display: flex;
+  :global{
+    .page-warp{
+      //padding: 0 12px;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  .contactLeft{
+    width: 40%;
+  }
+  .followUs{
+    width: 40%;
+    margin: 0 0 0 20%;
+  }
+  a{
+    color: #a978ee;
+  }
+  .title{
+    font-size: 40px;
+    line-height: 1.2em;
+    font-weight: 400;
+  }
+  .mailSuccess{
+    padding: 20px 0;
+    font-size: 16px;
+  }
+  .mail{
+    margin: 16px 0 0;
+    width: 100%;
+    ime-mode: disabled;
+  }
+  .mailAlt{
+    padding: 6px 0 0;
+    font-size: 12px;
+    color: #DDD;
+  }
+  .mailMessage{
+    padding: 8px 0;
+    color: #db00ac;
+  }
+
+  .followUs{
+    padding: 6px 0;
+    a{
+      color: #FFF;
+    }
+    h3{
+      font-size: 24px;
+      font-weight: 400;
+      padding: 0 0 30px 0;
+      line-height: 1em;
+    }
+    .items{
+      font-size: 16px;
+      padding: 0 0 18px 0;
+      .douyin{
+        display: inline-block;
+        background: url('https://p-pc-weboff.byteimg.com/tos-cn-i-9r5gewecjs/favicon.png') no-repeat center;
+        background-size: cover;
+        width: 18px;
+        height: 18px;
+        vertical-align: middle;
+        margin-right: 10px;
+        filter: invert(100%);
+      }
+      .icon{
+        font-size: 20px;
+        margin-right: 10px;
+        vertical-align: middle;
+        color: #EEE;
+      }
+    }
+  }
+}
+
+.moveVideoContactPrivacyPolicy{
+  max-width: 420px;
+}
+
+
+@media screen and (max-width: 480px) {
+  body {
+    .contact{
+      :global{
+        .page-warp{
+          //padding: 0 12px;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      .contactLeft{
+        width: 100%;
+      }
+      .followUs{
+        width: 100%;
+        padding-top: 90px;
+        margin-left: 0;
+      }
+    }
+  }
+}

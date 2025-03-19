@@ -1,0 +1,30 @@
+.productHelp{
+  position: relative;
+  z-index: 60;
+  padding: 70px 70px 56px;
+  &.dark{
+    background-color: #0D0D0D;
+    color: #FFF;
+  }
+  .title{
+    font-size: 44px;
+    font-weight: 300;
+    line-height: 1.2em;
+  }
+
+  .list{
+    padding: 20px 0 0;
+  }
+  .collapse{
+    margin: 0 0 16px 0;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  body {
+    .productHelp{
+      padding: 70px 16px;
+    }
+  }
+}

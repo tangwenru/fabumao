@@ -1,0 +1,14 @@
+.drawerDialog {
+  :global {
+    .ant-drawer-body {
+      background-color: #f5f5f5;
+    }
+  }
+  &.light{
+    :global {
+      .ant-drawer-body {
+        background-color: #FFF;
+      }
+    }
+  }
+}

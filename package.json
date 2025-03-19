@@ -1,0 +1,45 @@
+{
+  "private": true,
+  "name": "fabumao",
+  "version": "1.0.6",
+  "author": "王温如 <13640661@qq.com>",
+  "scripts": {
+    "dev": "max dev",
+    "build": "max build",
+    "format": "prettier --cache --write .",
+    "postinstall": "max setup",
+    "setup": "max setup",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "@ant-design/cssinjs": "^1.23.0",
+    "@ant-design/icons": "^5.6.1",
+    "@ant-design/nextjs-registry": "^1.0.2",
+    "@ant-design/plots": "^2.3.3",
+    "@ant-design/pro-components": "^2.8.6",
+    "@ant-design/pro-layout": "^7.22.3",
+    "@umijs/hooks": "^1.9.3",
+    "@umijs/max": "^4.4.6",
+    "@zxing/library": "^0.21.3",
+    "antd": "^5.24.2",
+    "antd-img-crop": "^4.24.0",
+    "component-shipinlv": "^2.2.19",
+    "dayjs": "^1.11.13",
+    "markdown-to-jsx": "^7.7.4",
+    "qiniu-js": "~3.4.2",
+    "qrcode.react": "^3.2.0",
+    "react-json-view": "^1.21.3",
+    "umi-request": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "lint-staged": "^13.3.0",
+    "npx": "^10.2.2",
+    "prettier": "^2.8.8",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "prettier-plugin-packagejson": "^2.5.10",
+    "rc-upload": "^4.8.1",
+    "typescript": "^5.8.2"
+  }
+}

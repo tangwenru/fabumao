@@ -1,0 +1,15 @@
+.fromChannel {
+  display: inline-block;
+  line-height: 1em;
+  &.tag {
+    padding: 3px;
+    border-radius: 3px;
+    color: #fff !important;
+    .icon {
+      color: #fff !important;
+    }
+  }
+  &.noTag {
+    background-color: transparent !important;
+  }
+}
