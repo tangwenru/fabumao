@@ -12,7 +12,7 @@ const getLocalUserInfo = () => {
     canWithdraw: 0,
     ...store.get('user-info'),
   };
-  storageCustomerInfo.avatarUrl = storageCustomerInfo.avatarUrl || 'https://fafamao.oss-cn-chengdu.aliyuncs.com/image/famaomao.png'
+  storageCustomerInfo.avatarUrl = storageCustomerInfo.avatarUrl || 'https://fafamao.oss-cn-chengdu.aliyuncs.com/image/logo.png'
   return storageCustomerInfo;
 }
 

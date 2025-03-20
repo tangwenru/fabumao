@@ -4,7 +4,7 @@ import packageJson from './package.json';
 const isProduction = process.env.NODE_ENV === 'production';
 
 
-const ShareImageUrl = `https://fafamao.oss-cn-chengdu.aliyuncs.com/image/famaomao.png`;
+const ShareImageUrl = `https://fafamao.oss-cn-chengdu.aliyuncs.com/image/logo.png`;
 
 export default defineConfig({
   antd: {},
@@ -27,9 +27,9 @@ export default defineConfig({
     { name: 'viewport', content: 'maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width,initial-scale=1.0' },
     { name: 'format-detection-task', content: 'telephone=no,email=no,date=no,address=no' },
     { name: 'Language', content: 'zh-CN' },
-    { name: 'Copyright', content: '王温如' },
-    { name: 'Designer', content: '王温如' },
-    { name: 'Publisher', content: '王温如' },
+    { name: 'Copyright', content: '武哥' },
+    { name: 'Designer', content: '武哥' },
+    { name: 'Publisher', content: '武哥' },
     { name: 'Distribution', content: 'Global' },
     { name: 'robots', content: 'all' },
 

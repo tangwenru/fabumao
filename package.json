@@ -2,7 +2,7 @@
   "private": true,
   "name": "fabumao",
   "version": "1.0.10",
-  "author": "王温如 <13640661@qq.com>",
+  "author": "武哥 <13640661@qq.com>",
   "scripts": {
     "dev": "max dev",
     "build": "max build",
