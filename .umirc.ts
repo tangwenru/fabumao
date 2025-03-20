@@ -4,7 +4,7 @@ import packageJson from './package.json';
 const isProduction = process.env.NODE_ENV === 'production';
 
 
-const ShareImageUrl = `https://patrol-camera.oss-cn-hangzhou.aliyuncs.com/image/logo.png`;
+const ShareImageUrl = `https://fafamao.oss-cn-chengdu.aliyuncs.com/image/famaomao.png`;
 
 export default defineConfig({
   antd: {},
@@ -62,7 +62,7 @@ export default defineConfig({
     // `https://gw.alipayobjects.com/os/lib/??react/18.2.0/umd/react.production.min.js,react-dom/18.2.0/umd/react-dom.production.min.js`,
     `window.ieVersion=function(){var userAgent=navigator.userAgent;var isIE=userAgent.indexOf("compatible")>-1&&userAgent.indexOf("MSIE")>-1;var isEdge=userAgent.indexOf("Edge")>-1&&!isIE;var isIE11=userAgent.indexOf("Trident")>-1&&userAgent.indexOf("rv:11.0")>-1;var version=0;if(isIE){var reIE=new RegExp("MSIE (\\\\d+\\\\.\\\\d+);");reIE.test(userAgent);var fIEVersion=parseFloat(RegExp["$1"]);if(fIEVersion===7){version=7}else if(fIEVersion===8){version=8}else if(fIEVersion===9){version=9}else if(fIEVersion===10){version=10}else{version=6}}else if(isEdge){version=12}else if(isIE11){version=11}else{version=1000}return version};if(window.ieVersion()<=9){document.body.innerHTML='      <div id="ieLow" class="ieLow">        <div class="mainContent">            你的浏览器版本太低了，强烈建议使用现代浏览器，比如：            <a href="https://www.google.cn/intl/zh-CN/chrome/" target="_blank"            >谷歌浏览器</a            >，            <a href="https://browser.360.cn/se/" target="_blank"            >360浏览器</a> 等等...        </div>    </div>'}`
   ],
-  publicPath:  isProduction? `https://patrol-camera.oss-cn-hangzhou.aliyuncs.com/www/dist/${ packageJson.version }/` : '/',
+  publicPath:  isProduction? `https://fafamao.oss-cn-chengdu.aliyuncs.com/www/dist/${ packageJson.version }/` : '/',
   externals:{},
   extraBabelPlugins: isProduction
     ? ['babel-plugin-dynamic-import-node']

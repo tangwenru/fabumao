@@ -91,7 +91,8 @@ const MyLayout: React.FC<Props>
           <div className={ styles.headerContent }>
             <Link className={ styles.logo } to="/" title={ getWebTitle() }>
               <img
-                src={ logo }
+                src={
+                logo }
                 alt={ title }
               />
               {
