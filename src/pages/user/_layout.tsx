@@ -3,7 +3,7 @@
 import React, {useEffect, useState} from 'react';
 import {ConfigProvider, Layout, Menu} from "antd";
 import styles from './_layout.less';
-import RouterCustomer from '@/config/route-customer';
+import RouterUser from '@/config/route-user';
 import getLocalUserInfo from "@/lib/getLocalUserInfo";
 import goAuth from "@/lib/goAuth";
 import {go} from "@/lib";
@@ -56,7 +56,7 @@ const UserLayout: React.FC<Props> = ({ children }) => {
               defaultSelectedKeys={ defaultSelectedKeys }
               // defaultOpenKeys={['sub1']}
               style={{ height: '100%' }}
-              items={ RouterCustomer }
+              items={ RouterUser }
               className={ styles.menu }
               onClick={ e => onMenu( e.key )}
             />

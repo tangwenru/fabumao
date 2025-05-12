@@ -1,0 +1,53 @@
+.vipCard{
+  .useInfo{
+    small{
+      color: #AAA;
+    }
+  }
+
+  .remarkInput{
+    //max-width: 150px;
+    :global{
+      label.content{
+        display: inline-block;
+        overflow: hidden;
+        word-break: keep-all;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 160px;
+      }
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 800px) {
+  .vipCard{
+    .codeCopy{
+      min-width: 45px;
+      display: block;
+      :global{
+        .children{
+          display: none;
+        }
+      }
+    }
+    :global{
+      .ant-table{
+        .ant-table-thead{
+          th:nth-child(3){
+            display: none;
+          }
+        }
+        .ant-table-tbody{
+          tr{
+            td:nth-child(3){
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

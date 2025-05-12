@@ -7,6 +7,7 @@ import { useRequest } from '@umijs/hooks';
 import styles from './index.less';
 import UserAvatar from '@/component/user/avatar';
 import * as UserController from '@/service/api/UserController';
+import UserProfileUserVip from '@/pages/user/profile/user-vip';
 import PageContentWarp from "@/ui/PageContentWarp";
 import getLocalUserInfo from "@/lib/getLocalUserInfo";
 import {store } from "@/lib";
@@ -79,85 +80,88 @@ const UserProfile = () => {
   }, []);
 
   return (
-    <PageContentWarp
-      // title="我的资料"
-      className={ styles.profile }
-      loading={loading}
-      error={error}
-      onReload={() => run()}
-    >
-      <div className={ styles.profileContent }>
+    <UserLayout>
+      <PageContentWarp
+        // title="我的资料"
+        className={ styles.profile }
+        loading={loading}
+        error={error}
+        onReload={() => run()}
+      >
+        <div className={ styles.profileContent }>
+          <UserProfileUserVip />
 
-        <Card title="我的资料">
-          <div className={ styles.form }>
-            <Form
-              form={form}
-              labelCol={{ span: 6 }}
-              onFinish={onFinish}
-            >
-              <Form.Item label="用户编号" name="userId">
-                <strong>{userInfo.id?.toString(36).toLocaleUpperCase()}</strong>
-              </Form.Item>
-
-              <Form.Item label="登录账户">
-                { userInfo.accountName }
-              </Form.Item>
-
-              <Form.Item
-                label="昵称"
-                name="nickname"
-                rules={[
-                  { required: true, message: '请输入昵称' },
-                  { max: 12, message: '最多12个字符' },
-                ]}
+          <Card title="我的资料">
+            <div className={ styles.form }>
+              <Form
+                form={form}
+                labelCol={{ span: 6 }}
+                onFinish={onFinish}
               >
-                <Input
-                  disabled={loadingSave}
-                  prefix={<UserOutlined className="input-prefix-icon" />}
-                  placeholder="最多20个字符"
-                />
-              </Form.Item>
+                <Form.Item label="用户编号" name="userId">
+                  <strong>{userInfo.id?.toString(36).toLocaleUpperCase()}</strong>
+                </Form.Item>
 
-              <Form.Item label="头像">
-                <UserAvatar
-                  defaultAvatarUrl={userInfo.avatarUrl}
-                  onChange={(avatarUrl, avatarKey) =>
-                    onAvatarChange(avatarUrl, avatarKey)
-                  }
-                />
-              </Form.Item>
+                <Form.Item label="登录账户">
+                  { userInfo.accountName }
+                </Form.Item>
 
-              <Form.Item
-                name="gender"
-                label="性别"
-              >
-                <Radio.Group disabled={loadingSave}>
-                  <Radio value={1}>男</Radio>
-                  <Radio value={0}>女</Radio>
-                  <Radio value={2}>不告诉你</Radio>
-                </Radio.Group>
-              </Form.Item>
-
-
-              <Form.Item
-                wrapperCol={{ span: 6, offset: 6 }}
-              >
-                <Button
-                  className={styles['submit']}
-                  htmlType="submit"
-                  type="primary"
-                  loading={loadingSave}
+                <Form.Item
+                  label="昵称"
+                  name="nickname"
+                  rules={[
+                    { required: true, message: '请输入昵称' },
+                    { max: 12, message: '最多12个字符' },
+                  ]}
                 >
-                  保存
-                </Button>
-              </Form.Item>
-            </Form>
-          </div>
-        </Card>
+                  <Input
+                    disabled={loadingSave}
+                    prefix={<UserOutlined className="input-prefix-icon" />}
+                    placeholder="最多20个字符"
+                  />
+                </Form.Item>
 
-        <UserPassword />
-      </div>
-    </PageContentWarp>
+                <Form.Item label="头像">
+                  <UserAvatar
+                    defaultAvatarUrl={userInfo.avatarUrl}
+                    onChange={(avatarUrl, avatarKey) =>
+                      onAvatarChange(avatarUrl, avatarKey)
+                    }
+                  />
+                </Form.Item>
+
+                <Form.Item
+                  name="gender"
+                  label="性别"
+                >
+                  <Radio.Group disabled={loadingSave}>
+                    <Radio value={1}>男</Radio>
+                    <Radio value={0}>女</Radio>
+                    <Radio value={2}>不告诉你</Radio>
+                  </Radio.Group>
+                </Form.Item>
+
+
+                <Form.Item
+                  wrapperCol={{ span: 6, offset: 6 }}
+                >
+                  <Button
+                    className={styles['submit']}
+                    htmlType="submit"
+                    type="primary"
+                    loading={loadingSave}
+                  >
+                    保存
+                  </Button>
+                </Form.Item>
+              </Form>
+            </div>
+          </Card>
+
+          <UserPassword />
+        </div>
+      </PageContentWarp>
+    </UserLayout>
   );
 };
 

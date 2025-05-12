@@ -49,7 +49,7 @@ const AboutUsPage: React.FC<Props> = ({} ) => {
       <div className={ styles.pageTitle}>
         <div className="page-warp">
           <h1>企业级短视频发布平台</h1>
-          <h3>让发布。。。。。。。</h3>
+          <h3>让批量发布事半功倍</h3>
         </div>
         {
           ! isMobile &&

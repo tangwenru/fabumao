@@ -11,7 +11,7 @@ export async function customerList(
   options?: ServicesApi.RequestOptions,
 ) {
   return request<Dealer.CustomerListData>(
-    `dealer/user/list`,
+    `dealer/customer/list`,
     {
       method: 'POST',
       headers: {
@@ -33,7 +33,7 @@ export async function customerDetail(
   options?: ServicesApi.RequestOptions,
 ) {
   return request<Dealer.CustomerDetail>(
-    `dealer/user/detail`,
+    `dealer/customer/detail`,
     {
       method: 'POST',
       headers: {
@@ -55,7 +55,7 @@ export async function agentRatio(
   options?: ServicesApi.RequestOptions,
 ) {
   return request<Dealer.AgentRatio>(
-    `dealer/user/agentRatio`,
+    `dealer/customer/agentRatio`,
     {
       method: 'POST',
       headers: {
@@ -209,7 +209,7 @@ export async function userPassword(
   options?: ServicesApi.RequestOptions,
 ) {
   return request<Dealer.CustomerUserPasswordResult>(
-    `dealer/user/userPassword`,
+    `dealer/customer/userPassword`,
     {
       method: 'POST',
       headers: {

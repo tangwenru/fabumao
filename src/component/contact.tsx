@@ -133,7 +133,7 @@ const Contact: React.FC<Props> = ( ) => {
             <Row gutter={ 26 }>
               <Col span={ 12 }>
                 <div className={ styles.items }>
-                  <a href="" target="_blank" title={ `${ getSiteInfo().webTitle } 微博` }>
+                  <a title={ `${ getSiteInfo().webTitle } 微博` }>
                     <WeiboOutlined className={ styles.icon } /> { getSiteInfo().webTitle } 微博
                   </a>
                 </div>

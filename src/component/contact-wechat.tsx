@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { Divider, Popover } from 'antd';
 import { WechatOutlined } from '@ant-design/icons';
+import styles from './contact-admin.less'
 import Platform from "@/component/platform";
 import getLocalSiteInfo from "@/lib/getLocalSiteInfo";
 import MakeQrImage from "@/lib/makeQrUrl";

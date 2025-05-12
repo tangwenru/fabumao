@@ -44,6 +44,11 @@ const MyLayout: React.FC<Props>
       // icon: <HomeOutlined />,
     },
     {
+      label: `产品`,
+      key: '/product',
+      // icon: <AppstoreAddOutlined />,
+    },
+    {
       label: `关于`,
       key: '/about-us',
       // icon: <AppstoreAddOutlined />,
@@ -91,8 +96,7 @@ const MyLayout: React.FC<Props>
           <div className={ styles.headerContent }>
             <Link className={ styles.logo } to="/" title={ getWebTitle() }>
               <img
-                src={
-                logo }
+                src={ logo }
                 alt={ title }
               />
               {

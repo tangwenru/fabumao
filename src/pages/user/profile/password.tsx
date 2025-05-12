@@ -6,6 +6,11 @@ import { useRequest } from '@umijs/hooks';
 
 import styles from './password.less';
 import * as UserController from '@/service/api/UserController';
+import UserPasswordUserVip from '@/pages/user/profile/user-vip';
+import PageContentWarp from "@/ui/PageContentWarp";
+import getLocalUserInfo from "@/lib/getLocalUserInfo";
+import {store } from "@/lib";
+import event from "@/lib/event";
 import toast from "@/lib/toast";
 import Tool from "component-shipinlv/dist/lib/Tool";
 import {savePassword} from "@/service/api/UserController";

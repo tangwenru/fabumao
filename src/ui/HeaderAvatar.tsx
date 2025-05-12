@@ -60,18 +60,18 @@ const HeaderAvatarProps = ( userInfo: User.UserInfo, isHideHome: boolean ) => {
             // }
         );
 
-        // if( siteInfo.isIDealer  ){
-        //   itemsDropdown.push({
-        //     label: <a>进入经销商模式</a>,
-        //     key: '/dealer/dashboard',
-        //     icon: <UserOutlined />,
-        //   });
-        //   itemsDropdown.push({
-        //     label: <a>购买卡密</a>,
-        //     key: '/user/vip/list/vip-card',
-        //     icon: <CrownOutlined />,
-        //   });
-        // }
+        if( siteInfo.isIDealer  ){
+          itemsDropdown.push({
+            label: <a>进入经销商模式</a>,
+            key: '/dealer/dashboard',
+            icon: <UserOutlined />,
+          });
+          // itemsDropdown.push({
+          //   label: <a>购买卡密</a>,
+          //   key: '/user/vip/list/vip-card',
+          //   icon: <CrownOutlined />,
+          // });
+        }
 
         itemsDropdown.push({
             key: 'logout',

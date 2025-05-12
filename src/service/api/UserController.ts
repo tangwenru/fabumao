@@ -1,7 +1,7 @@
 import request from '@/lib/Request';
 
 export async function getInfo(body?: {}, options?: Global.RequestOptions) {
-  return request<User.UserInfo>(`user/user/info`, {
+  return request<User.UserInfo>(`user/info`, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -76,7 +76,7 @@ export async function getMyUpInfo(
   body?: {},
   options?: Global.RequestOptions,
 ) {
-  return request<Customer.MyUpInfo>(`user/myUpInfo`, {
+  return request<User.MyUpInfo>(`user/myUpInfo`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
@@ -93,7 +93,7 @@ export async function userVipInfo(
   body?: {},
   options?: Global.RequestOptions,
 ) {
-  return request<Customer.UserVipInfo[]>(
+  return request<User.UserVipInfo[]>(
     `user/userVipInfo`,
     {
       method: 'GET',

@@ -24,7 +24,7 @@ interface Props{
 
 const SoftDownload: React.FC<Props>
   = ({
-       productType = document.location.pathname.match(/\/product\/([a-z0-9-]+)\/download/i)?.[1] || '',
+       productType= document.location.pathname.match(/\/product\/([a-z0-9-]+)\/download/i)?.[1] || '',
      }) => {
   const [ detailData, setDetailData ] = useState<ClientVersion.Detail>({
     windows: {

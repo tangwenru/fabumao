@@ -38,7 +38,7 @@ const Auth: React.FC<Props>
       {
         isLoad &&
         <AuthShipinlv
-          apiUrl={getBaseConfigItemApi() + 'user/'}
+          apiUrl={getBaseConfigItemApi()  }
           productType="fabumao"
           roleType="user"
           clientUniqueKeyList={[]}
